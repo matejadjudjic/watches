@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::composer('layouts.partials.navigation', function ($view) {
+        View::composer('fixed.navigation', function ($view) {
             if (Schema::hasTable('menus')) {
                 $view->with('menus', DB::table('menus')->get());
             } else {
