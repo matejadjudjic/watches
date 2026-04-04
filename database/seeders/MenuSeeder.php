@@ -36,5 +36,11 @@ class MenuSeeder extends Seeder
             'path' => '/about',
 
         ]);
+
+        Menu::create([
+            'title' => 'About Me',
+            'path' => '/about-me',
+
+        ]);
     }
 }
