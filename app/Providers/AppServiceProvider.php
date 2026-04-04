@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -20,9 +21,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $menus = DB::table('menus')->get();
-
-
-        View::share('menus', $menus);
+        View::composer('layouts.partials.navigation', function ($view) {
+            if (Schema::hasTable('menus')) {
+                $view->with('menus', DB::table('menus')->get());
+            } else {
+                $view->with('menus', collect());
+            }
+        });
     }
 }
