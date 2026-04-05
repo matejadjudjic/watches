@@ -29,6 +29,9 @@ cp .env.example .env
 php artisan key:generate
 
 # 6. Podesi bazu podataka u .env fajlu
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
 DB_DATABASE=satovi-laravel
 DB_USERNAME=root
 DB_PASSWORD=
