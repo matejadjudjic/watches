@@ -73,7 +73,7 @@
                 },
                 success: function(response) {
                     $('#cart-popup-message').text(response.message);
-                    $('#cart-popup').fadeIn().delay(1700).fadeOut();
+                    $('#cart-popup').fadeIn().delay(1870).fadeOut();
                     setTimeout(function() {
                         window.location.href = '/';
                     }, 1700);

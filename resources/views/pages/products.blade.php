@@ -137,7 +137,7 @@
         let maxPrice = null;
         let searchTerm = '';
 
-        // Filter po kategoriji
+
         $('.filter-category').on('click', function(e) {
             e.preventDefault();
             activeCategory = $(this).data('id') || null;
@@ -171,7 +171,7 @@
             fetchProducts();
         });
 
-        // Pretraga
+
         $('#search-input').on('keyup', function() {
             searchTerm = $(this).val();
             fetchProducts();
