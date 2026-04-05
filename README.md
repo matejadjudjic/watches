@@ -2,7 +2,14 @@
 
 
 👤 Test kredencijali
-RolaEmailLozinkaAdminnina@gmail.combojanaUsermatejadjudjic55@gmail.commateja
+Admin:
+Email: nina@gmail.com
+Password: bojana
+
+
+User:
+Email: matejadjudjic55@gmail.com
+Passoword: mateja
 
 ⚙️ Instalacija
 bash# 1. Kloniraj repozitorijum
