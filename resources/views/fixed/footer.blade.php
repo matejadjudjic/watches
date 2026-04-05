@@ -15,6 +15,8 @@
                         <a href="{{ $menu->path }}" class="color2">{{ $menu->title }}</a>
                     </li>
                 @endforeach
+
+                <li><a href="https://docs.google.com/document/d/1Yl2uYvoI6FEfJ5sTkdLCgEYxHYuH6Bf5a-iDZGiI00Y/edit?tab=t.0">Dokumentation</a></li>
             </ul>
         </div>
         <ul class="social">

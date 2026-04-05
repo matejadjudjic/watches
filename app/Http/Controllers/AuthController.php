@@ -37,7 +37,7 @@ class AuthController extends Controller
             'address'  => $request->address,
             'city'     => $request->city,
             'country'  => $request->country,
-            'role_id'  => 1,
+            'role_id'  => 2,
         ]);
         ActivityLog::log('register', 'New user registered: ' . $request->email);
         return redirect('/login')->with('success', 'Registration successful! Log in.');
